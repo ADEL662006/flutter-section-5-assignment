@@ -1,5 +1,3 @@
-// ===================== إجابات أسئلة 5.1: Navigation & GoRouter =====================
-//
 // 1. What is GoRouter?
 //    مكتبة توجيه رسمية في فلاتر تعتمد على الـ Declarative Routing (Routing 2.0)
 //    وتربط بين واجهات التطبيقات والـ URLs.
@@ -15,7 +13,6 @@
 // 5. How does existing redirect affect access to Login and Signup?
 //    الـ Redirect يفحص فقط المسارات التي تبدأ بـ /home (goingToHome). بما أن /login و /signup
 //    مسارات Top-level ولا تبدأ بـ /home، يسمح الـ Redirect بفتحهما مجاناً وبدون قيود.
-// ================================================================================
 
 import 'package:go_router/go_router.dart';
 import 'test.dart';

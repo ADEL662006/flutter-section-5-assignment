@@ -1,5 +1,3 @@
-// ===================== شرح Part 4: Form & Controllers =====================
-//
 // 1. كيف تعمل المكونات معاً (Form, TextFormField, Controller, Validator, GlobalKey):
 //    - GlobalKey<FormState>: المفتاح الذي يعطينا صلاحية الوصول لـ FormState من خارج الـ Form.
 //    - Form: الـ Container الأساسي الذي يربط جميع الـ TextFormFields بمفتاح واحد (_keyForm).
@@ -12,7 +10,6 @@
 //    الـ TextEditingController يستمع للأحداث ويتصل بذاكرة النظام (ChangeNotifier).
 //    إذا لم نقم باستدعاء dispose() عند تدمير الصفحة (Unmount)، سيظل الكائن محجوزاً في الذاكرة
 //    مما يسبب تسريب الذاكرة (Memory Leak) وإبطاء التطبيق.
-// ===========================================================================
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';

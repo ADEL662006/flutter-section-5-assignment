@@ -17,13 +17,13 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         useMaterial3: true,
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color(0xFF090D16), // Charcoal Black
+        scaffoldBackgroundColor: const Color(0xFF090D16),
         colorScheme: const ColorScheme.dark(
-          primary: Color(0xFF06B6D4), // Electric Cyan
-          secondary: Color(0xFF0EA5E9), // Muted Teal
-          surface: Color(0xFF0F172A), // Deep Navy
+          primary: Color(0xFF06B6D4),
+          secondary: Color(0xFF0EA5E9),
+          surface: Color(0xFF0F172A),
           onPrimary: Color(0xFF090D16),
-          onSurface: Color(0xFFF8FAFC), // Soft White
+          onSurface: Color(0xFFF8FAFC),
         ),
         appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xFF0F172A),

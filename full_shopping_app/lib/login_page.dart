@@ -1,6 +1,3 @@
-// ===================== إجابات الأسئلة النظرية (Parts 1, 2, 3) =====================
-//
-// ---------------------------- Part 1: super.key (Keys) ----------------------------
 // 1. What is a Key in Flutter?
 //    الـ Key هو مُعرّف فريد (Identifier) للـ Widgets والـ Elements، بيساعد Flutter يميّز
 //    بين الـ Widgets ويحافظ على الـ State بتاعهم عند إعادة الترتيب أو التعديل في الـ Widget Tree.
@@ -17,7 +14,6 @@
 //    عشان نربط الـ Form بـ Key يخلينا نقدر نتحكم فيه ونشغّل الـ validation على كل الـ TextFormFields
 //    اللي جواه عن طريق currentState!.validate().
 //
-// ---------------------------- Part 2: const Usage ----------------------------
 // 1. What is compile-time constant?
 //    قيمة أو كائن بيتحدد وبيتجهز وقت الـ Compile (قبل ما البرنامج يشتغل) ومش بتتغير أصلًا وقت الـ Runtime.
 // 2. Difference between const and runtime values?
@@ -33,7 +29,6 @@
 //    لأن الـ Controllers والـ Dynamic values قيمها وكائناتها بتتأنشئ وتتغير في الـ Runtime،
 //    بالتالي مستحيل تحديدها وقت الـ Compile.
 //
-// ---------------------------- Part 3: Private State ----------------------------
 // 1. What does _ mean in Dart?
 //    إضافة _ قبل اسم المتغير أو الكلاس أو الدالة بتخليه Private (خاص) على مستوى الملف (Library).
 // 2. What is Library Privacy?
@@ -47,7 +42,6 @@
 // 5. How should createState() be updated?
 //    تُحدث لتُرجع الـ Private State Class:
 //    @override State<LoginPage> createState() => _LoginPageState();
-// ==================================================================================
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
