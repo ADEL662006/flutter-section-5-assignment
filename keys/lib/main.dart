@@ -47,7 +47,7 @@ class _DemoState extends State<Demo> {
 class CheckItem extends StatefulWidget {
   final String title;
 
-  const CheckItem({required this.title});
+  const CheckItem({super.key, required this.title});
 
   @override
   State<CheckItem> createState() => _CheckItemState();

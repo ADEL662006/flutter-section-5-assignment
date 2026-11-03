@@ -1,39 +1,40 @@
-import 'package:flutter/material.dart' ;
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-class ProductsPage extends StatefulWidget{
+
+class ProductsPage extends StatefulWidget {
+  const ProductsPage({super.key});
+
   @override
-  State<ProductsPage> createState() {
-    return ProductsPageState() ;
-  }
+  State<ProductsPage> createState() => _ProductsPageState();
 }
 
-class ProductsPageState extends State<ProductsPage>{
-
+class _ProductsPageState extends State<ProductsPage> {
   @override
   void initState() {
-    print(" start Products");
-    // TODO: implement initState
     super.initState();
+    print(" start Products");
   }
 
   @override
   void dispose() {
     print(" finish Products");
-    // TODO: implement dispose
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text("Products")),
       body: Center(
-        child:
-        Column(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            Text("welcome to Products Page"),
-            ElevatedButton(onPressed: (){
-              context.pop();
-            }, child: Text("go back"))
+            const Text("welcome to Products Page"),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () => context.pop(),
+              child: const Text("go back"),
+            ),
           ],
         ),
       ),
